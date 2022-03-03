@@ -1,39 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
 
 * {
-    font-family: 'Open Sans', sans-serif;
-}
+  font-family: "Open Sans", sans-serif;
+  color:rgb(99, 6, 136);
+  }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(130, 96, 224);
-    font-weight: bold;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:rgba(56, 96, 228, 0.589)
+  }
 
 button {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 2px solid rgb(192, 33, 192);
-    background-color: rgb(160, 82, 163);
-    color: rgb(0, 4, 5);
-    font-size: 16pt;
-    font-weight: 600;
-    text-align: center;
+  border: 1px solid rgb(101, 27, 219));
+  border-radius: 5px;
+  background-color: rgb(227, 248, 255);
+  color: rgb(106, 40, 211);
+  text-align: center;
+  padding: 5px;
 }
 
-#counter {
-    display: flex;
-    font-weight: bold;
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(99, 6, 136);
 }
 
-#currentNumber {
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-    font-size: 16pt;
-    
+#tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  color: rgb(210, 76, 228);
 }
